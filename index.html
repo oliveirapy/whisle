@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .opacity {
+            opacity: 0; 
+            transition: opacity 6s; 
+        }
+
+        
+        .opacity.active {
+            opacity: 1;
+        }
+    </style>
+    <title>Index</title>
+</head>
+<body id='ryan2'>
+    <h1> Gustavo's Calculator</h1>
+    
+    <input type="number" id="num1"> +
+    <input type="number" id="num2"> = <br> <br>
+    <button onclick="playVideo()">Enter</button><br> <br>
+    
+    <video id="ada" src="video/0512 (1).mp4" width="50%" class="opacity"></video>
+
+    
+    <script>
+        function playVideo() {
+            var video = document.getElementById("ada");
+            video.play();
+            video.classList.add("active");
+            
+
+        }
+    </script>
+</body>
+</html>
